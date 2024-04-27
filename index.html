@@ -1,148 +1,135 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <!--
-	Astral by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+Solid State by HTML5 UP
+html5up.net | @ajlkn
+Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+Starfield by Slawomir Chodnicki https://medium.com/better-programming/fun-with-html-canvas-lets-create-a-star-field-a46b0fed5002
 -->
 <html>
 
 <head>
-  <title>Astral by HTML5 UP</title>
+  <title>Matt Lui</title>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
   <link rel="stylesheet" href="assets/css/main.css" />
   <noscript>
     <link rel="stylesheet" href="assets/css/noscript.css" />
   </noscript>
+  <link rel="shortcut icon" type="image/jpg" href="images/favicon.ico" />
+  <meta name="image" property="og:image" content="assets/images/other/thumbnail.png" />
 </head>
 
 <body class="is-preload">
+  <!-- Page Wrapper -->
+  <div id="page-wrapper">
+    <!-- Header -->
+    <header id="header" class="alt">
+      <h1><a href="#">Matt</a></h1>
+      <ul class="icons" id="icons">
+        <li><a href="assets/files/MatthewLuiResume.pdf" class="icon solid fa-file"><span class="label">Resume</span></a>
+        </li>
+        <li><a href="https://www.linkedin.com/in/matthew-lui-652b076/" class="icon brands fa-linkedin"><span
+              class="label">Linkedin</span></a></li>
+        <li><a href="mailto:mattclui@gmail.com" class="icon solid fa-envelope "><span class="label">Email</span></a>
+        </li>
+        <li><a href="https://github.com/MattLui" class="icon brands fa-github"><span class="label">Github</span></a>
+        </li>
+      </ul>
+    </header>
+    <canvas id="canvas"></canvas>
+    <!-- Banner -->
+    <section id="banner">
 
-  <!-- Wrapper-->
-  <div id="wrapper">
 
-    <!-- Nav -->
-    <nav id="nav">
-      <a href="#" class="icon solid fa-home"><span>Home</span></a>
-      <a href="#work" class="icon solid fa-folder"><span>Work</span></a>
-      <a href="#contact" class="icon solid fa-envelope"><span>Contact</span></a>
-      <a href="https://twitter.com/ajlkn" class="icon brands fa-twitter"><span>Twitter</span></a>
-    </nav>
-
-    <!-- Main -->
-    <div id="main">
-
-      <!-- Me -->
-      <article id="home" class="panel intro">
-        <header>
-          <h1>Matthew Lui</h1>
-          <p>Software Engineer</p>
-        </header>
-        <a href="#work" class="jumplink pic">
-          <span class="arrow icon solid fa-chevron-right"><span>See my work</span></span>
-          <img src="images/me.jpg" alt="" />
-        </a>
-      </article>
-
-      <!-- Work -->
-      <article id="work" class="panel">
-        <header>
-          <h2>Work</h2>
-        </header>
+      <div class="inner">
+        <span class="image medium" id="headshot"><img src="images/matt.png" alt="" /></span>
+        <h2>Matt Lui</h2>
         <p>
-          Phasellus enim sapien, blandit ullamcorper elementum eu, condimentum eu elit.
-          Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia
-          luctus elit eget interdum.
+          I am a full-stack software engineer based in Irvine, California. Recently, I co-created Snowclone, a backend
+          -as-a-service solution supporting realtime applications. Previously, I was the Vice President of
+          Investment Research at one of the largest instutional investment consulting firms in the United States.
         </p>
-        <section>
-          <div class="row">
-            <div class="col-4 col-6-medium col-12-small">
-              <a href="#" class="image fit"><img src="images/pic01.jpg" alt=""></a>
-            </div>
-            <div class="col-4 col-6-medium col-12-small">
-              <a href="#" class="image fit"><img src="images/pic02.jpg" alt=""></a>
-            </div>
-            <div class="col-4 col-6-medium col-12-small">
-              <a href="#" class="image fit"><img src="images/pic03.jpg" alt=""></a>
-            </div>
-            <div class="col-4 col-6-medium col-12-small">
-              <a href="#" class="image fit"><img src="images/pic04.jpg" alt=""></a>
-            </div>
-            <div class="col-4 col-6-medium col-12-small">
-              <a href="#" class="image fit"><img src="images/pic05.jpg" alt=""></a>
-            </div>
-            <div class="col-4 col-6-medium col-12-small">
-              <a href="#" class="image fit"><img src="images/pic06.jpg" alt=""></a>
-            </div>
-            <div class="col-4 col-6-medium col-12-small">
-              <a href="#" class="image fit"><img src="images/pic07.jpg" alt=""></a>
-            </div>
-            <div class="col-4 col-6-medium col-12-small">
-              <a href="#" class="image fit"><img src="images/pic08.jpg" alt=""></a>
-            </div>
-            <div class="col-4 col-6-medium col-12-small">
-              <a href="#" class="image fit"><img src="images/pic09.jpg" alt=""></a>
-            </div>
-            <div class="col-4 col-6-medium col-12-small">
-              <a href="#" class="image fit"><img src="images/pic10.jpg" alt=""></a>
-            </div>
-            <div class="col-4 col-6-medium col-12-small">
-              <a href="#" class="image fit"><img src="images/pic11.jpg" alt=""></a>
-            </div>
-            <div class="col-4 col-6-medium col-12-small">
-              <a href="#" class="image fit"><img src="images/pic12.jpg" alt=""></a>
-            </div>
-          </div>
-        </section>
-      </article>
+      </div>
+    </section>
 
-      <!-- Contact -->
-      <article id="contact" class="panel">
-        <header>
-          <h2>Contact Me</h2>
-        </header>
-        <form action="#" method="post">
-          <div>
-            <div class="row">
-              <div class="col-6 col-12-medium">
-                <input type="text" name="name" placeholder="Name" />
-              </div>
-              <div class="col-6 col-12-medium">
-                <input type="text" name="email" placeholder="Email" />
-              </div>
-              <div class="col-12">
-                <input type="text" name="subject" placeholder="Subject" />
-              </div>
-              <div class="col-12">
-                <textarea name="message" placeholder="Message" rows="6"></textarea>
-              </div>
-              <div class="col-12">
-                <input type="submit" value="Send Message" />
-              </div>
-            </div>
+    <!-- Wrapper -->
+    <section id="wrapper">
+      <!-- One -->
+      <section id="one" class="wrapper spotlight style1">
+        <div class="inner">
+          <a href="https://haven-secrets.github.io" class="image"><img src="images/snowclone-icon.png" alt="" /></a>
+          <div class="content">
+            <h2 class="major">Snowclone</h2>
+            <p>
+              Snowclone is an open-source backend-as-a-service solution that provides developers with a Postgres
+              database, instant APIs, authentication, and real-time subscriptions.
+              It was built using Node.js and Terraform, and allows users to deploy a fully-functional backend to their
+              AWS cloud environment within minutes.
+            </p>
+            <p>
+              Snowclone's CLI tool abstracts away the the complexity of configuring and setting up backends on AWS, and
+              provides commands for deploying, removing, and managing backends.
+            </p>
+            <a href="https://snowclone-base.github.io/casestudy/introduction/" class="button">Read The Case Study</a>
           </div>
-        </form>
-      </article>
+        </div>
+      </section>
+    </section>
 
-    </div>
+    <!-- Two -->
+    <section id="two" class="wrapper alt spotlight style2">
+      <div class="inner">
+        <span class="image"><img src="images/rekwestbin.png" alt="" /></span>
+        <div class="content">
+          <h2 class="major">Rekwestbin</h2>
+          <p>
+            Tool for collecting and inspecting webhooks for debugging. Built using EJS and MongoDB.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Three -->
+    <section id="three" class="wrapper spotlight style3">
+      <div class="inner">
+        <span class="image"><img src="images/prayerpartner.png" alt="" /></span>
+        <div class="content">
+          <h2 class="major">Prayer Partner</h2>
+          <p>
+            Application for organizing and managing prayer requests. Built using Javascript and MongoDB.
+          </p>
+        </div>
+      </div>
+    </section>
+
 
     <!-- Footer -->
-    <div id="footer">
-      <ul class="copyright">
-        <li>&copy; Untitled.</li>
-        <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-      </ul>
-    </div>
-
+    <section id="footer">
+      <div class="inner">
+        <h2 class="major">Get in touch</h2>
+        <ul class="contact">
+          <li class="icon solid fa-key"><a href="https://snowclone-base.github.io/casestudy/introduction/">Snowclone
+              Case Study</a></li>
+          <li class="icon solid fa-envelope"><a href="mailto:mattclui@gmail.com">mattclui@gmail.com</a></li>
+          <li class="icon brands fa-linkedin"><a href="https://www.linkedin.com/in/matthew-lui-652b076/">Linkedin</a>
+          </li>
+          <li class="icon solid fa-file"><a href="assets/files/MatthewLuiResume.pdf">Resume</a></li>
+        </ul>
+        <ul class="copyright">
+          <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+        </ul>
+      </div>
+    </section>
   </div>
 
   <!-- Scripts -->
   <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/jquery.scrollex.min.js"></script>
   <script src="assets/js/browser.min.js"></script>
   <script src="assets/js/breakpoints.min.js"></script>
   <script src="assets/js/util.js"></script>
   <script src="assets/js/main.js"></script>
-
+  <script src="assets/js/starfield.js"></script>
 </body>
 
 </html>
